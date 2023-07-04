@@ -6,14 +6,14 @@ function selectItem(e) {
     removeBorder();
     removeShow();
     // Add border to current tab
-    this.classList.add('tab-border');
+    this.classList.add('tabs-border');
     // Grap content item from DOM
     const tabContentItem = document.querySelector(`#${this.id}-content`);
     tabContentItem.classList.add('show')
 }
 
 function removeBorder() {
-    tabItems.forEach(item => item.classList.remove('tab-border'));
+    tabItems.forEach(item => item.classList.remove('tabs-border'));
 }
 
 function removeShow() {
